@@ -32,12 +32,38 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+ 
+/* Main content */
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+main {
+    max-width: 1200px;
+    background-color: white;
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  main article {
+    box-sizing: border-box;
+    max-width: 75%;
+    padding: 2rem;
+  }
+  main img{
+      width: 100%; 
+  }
 
-ul.posts li {
-    list-style: none;
-}
+  .polaroid {
+    width: 60%;
+    margin: 1.75rem;
+    padding: 1rem 1rem 0 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: width 100ms;
+  }
+
+  
+.polaroid p {
+    margin: 0.5rem 0 0.75rem 0;
+    color: #666;
+    text-align: center;
+    font-size: 0.8rem; 
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  }
