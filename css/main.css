@@ -44,21 +44,39 @@ main {
   
   main article {
     box-sizing: border-box;
-    max-width: 75%;
     padding: 2rem;
   }
   main img{
       width: 100%; 
   }
 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+} 
+
 /*polaroid*/ 
   .polaroid {
-    width: 60%;
     margin: 1.75rem;
     padding: 1rem 1rem 0 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: width 100ms;
   }
+  
+.polaroid.left {
+    float: left;
+    margin-left: 1rem;
+    width: 40%;
+  }
+  
+  .polaroid.right {
+    float: right;
+    margin-right: 1rem;
+    width: 40%;
+  }
+
 .polaroid p {
     margin: 0.5rem 0 0.75rem 0;
     color: #666;
@@ -68,9 +86,6 @@ main {
   }
 
 /* New York, New York! */
-.sing {
-    text-decoration: underline;
-  }
 .shush {
     display: none;
   } 
