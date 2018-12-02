@@ -1,6 +1,8 @@
 body {
     margin: 60px auto;
     width: 70%;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -85,22 +87,48 @@ main {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
   }
 
-/* New York, New York! */
+  /* resume */
+  .resume p {
+    font-size: 1.2em; 
+   }
+
+  .resume-item h1 {
+      font-size: 1.2em; 
+  }
+  
+  .resume-item h2{
+    font-size: 0.8em; 
+    position: absolute; 
+    right: 0;
+}
+.resume-item h3{
+    font-size: 1em; 
+}
+  .grid-container {
+    display: grid;
+  }
+  .grid-container.two-columns {
+    grid-template-columns: 25% 75%;
+    padding: 10px;
+  }
+  .grid-container.three-columns {
+    grid-template-columns:  30% 30% 30%;
+    border-bottom: 1px solid #ccc ; 
+  }
+  .grid-container.three-columns.last {
+    border-bottom: none; 
+  }
+  .grid-item {
+    padding: 5px;
+  }
+  .grid-item.category {
+    font-style: italic; 
+  }
+
+  /* New York, New York! */
 .shush {
     display: none;
   } 
 .sing:hover .shush {
     display: block;
-  }
-
-  /*grid display*/
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
-  .grid-item {
-   padding: 20px;
-    font-size: 30px;
-    text-align: center;
   }
