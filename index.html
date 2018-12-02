@@ -1,6 +1,6 @@
 --- 
 layout: default 
-title: Home
+title: Home 
 ---
 
 <div>
@@ -18,9 +18,62 @@ title: Home
 			Because I mostly worked on proprietary software in the last years, I am unfortunately unable to share with you the fun projects
 			that I contributed to. But I still wanted to show you something, so I invested some of my free time to work on this project.
 		</p>
-
+		
 		<p>
-			I hope you enjoy it!
-		</p>
+				I hope you enjoy it!
+			</p>
+		
+	<div class="slides card" onclick="location.href='/view/recommendations.html';">
+			<div class="content">
+				"Being on the edge is important for an enthusiastic software developer. That's why I'd be happy for Miryam if she'd get a
+				chance to attend the conference. I'm sure she'll bring back lots of exciting and valuable ideas for the team."
+			</div>
+			<div class="source">
+				Sergey P., Software developer
+			</div>
+		</div>
+		<div class="slides card">
+			<div class="content">
+				"Miryam sets an example by strongly opposing female underrepresentation in software engineering and contributes for more
+				diversity in our company. For Miryam, participation at O'Reilly Software Architecture Conference would be an amazing opportunity
+				to level up her hard skills but also to strengthened her confidence and voice in the team."
+			</div>
+			<div class="source">
+				Dimitri A., Head of Software Development
+			</div>
+		</div>
+	
+		<div class="slides card">
+			<div class="content">
+				“In 20 years as a Fintech entrepreneur with both, 360T and CRX, I have worked with many intelligent and highly inspiring
+				people inside and outside my companies… from driven, smart employees to creative, motivating counterparts in the world’s
+				largest corporates and financial institutions. Miryam is among the very top of those inspiring people. She will make a
+				difference in business and personal life and I am honored that Miryam allows me and the rest of the team to work with
+				her.”
+			</div>
+			<div class="source"> Moritz von der Linden, Founder & Chief Business Officer</cite>
+			</div>
+		</div>
+
+
 	</article>
+
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) { myIndex = 1 }
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 7000); // Change image every 2 seconds
+		}
+	</script>
+
 </div>

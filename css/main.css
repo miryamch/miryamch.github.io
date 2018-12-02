@@ -132,3 +132,22 @@ main {
 .sing:hover .shush {
     display: block;
   }
+
+  /* Slide show */
+  .slides.card {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  .slides div.content {
+      background-color:rgb(102, 127, 106);
+      color: white;
+      padding: 10px;
+      font-size: 1.2em; 
+  }
+  
+  .slides div.source {
+      padding: 10px;
+  }
